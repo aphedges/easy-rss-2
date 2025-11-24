@@ -15,29 +15,32 @@ const compat = new FlatCompat({
 	allConfig: js.configs.all
 });
 
-export default defineConfig([globalIgnores(["**/dist"]), {
-	extends: compat.extends("eslint:recommended", "plugin:@typescript-eslint/recommended"),
+export default defineConfig([
+	globalIgnores(["**/dist"]),
+	{
+		extends: compat.extends("eslint:recommended", "plugin:@typescript-eslint/recommended"),
 
-	plugins: {
-		"@typescript-eslint": typescriptEslint,
-	},
-
-	languageOptions: {
-		globals: {
-			...globals.browser,
-			...globals.webextensions,
+		plugins: {
+			"@typescript-eslint": typescriptEslint,
 		},
 
-		parser: tsParser,
-		ecmaVersion: 11,
-		sourceType: "module",
-	},
+		languageOptions: {
+			globals: {
+				...globals.browser,
+				...globals.webextensions,
+			},
 
-	rules: {
-		"@typescript-eslint/no-non-null-assertion": 0,
-		indent: ["error", "tab"],
-		"linebreak-style": ["error", "unix"],
-		quotes: ["error", "double"],
-		semi: ["error", "always"],
+			parser: tsParser,
+			ecmaVersion: 11,
+			sourceType: "module",
+		},
+
+		rules: {
+			"@typescript-eslint/no-non-null-assertion": 0,
+			indent: ["error", "tab"],
+			"linebreak-style": ["error", "unix"],
+			quotes: ["error", "double"],
+			semi: ["error", "always"],
+		},
 	},
-}]);
+]);
