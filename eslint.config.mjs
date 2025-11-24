@@ -43,4 +43,10 @@ export default defineConfig([
 			semi: ["error", "always"],
 		},
 	},
+	{
+		files: ["*.cjs"],
+		languageOptions: {
+			sourceType: "commonjs",
+		},
+	},
 ]);
