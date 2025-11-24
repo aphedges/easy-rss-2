@@ -14,12 +14,15 @@
 		"lint": "eslint ."
 	},
 	"devDependencies": {
+		"@eslint/eslintrc": "^3.3.1",
+		"@eslint/js": "^9.39.1",
 		"@typescript-eslint/eslint-plugin": "^8.48.0",
 		"@typescript-eslint/parser": "^8.48.0",
 		"@webdiscus/pug-loader": "^2.11.1",
 		"copy-webpack-plugin": "^13.0.1",
 		"css-loader": "^7.1.2",
 		"eslint": "^9.39.1",
+		"globals": "^16.5.0",
 		"mini-css-extract-plugin": "^2.9.4",
 		"pug": "^3.0.3",
 		"sass": "^1.94.2",
