@@ -8,9 +8,9 @@
 		"start": "webpack --mode development --env dev -w",
 		"watch": "web-ext run -s dist/",
 		"build": "webpack --mode production --env prod",
-		"dist": "yarn build && web-ext build -s dist/",
+		"dist": "npm run build && web-ext build -s dist/",
 		"build-dev": "webpack --mode development --env dev",
-		"dist-dev": "yarn build-dev && web-ext build --overwrite-dest -s dist/",
+		"dist-dev": "npm run build-dev && web-ext build --overwrite-dest -s dist/",
 		"lint": "eslint ."
 	},
 	"devDependencies": {
@@ -33,6 +33,5 @@
 	},
 	"dependencies": {
 		"photon-colors": "^3.3.2"
-	},
-	"packageManager": "yarn@4.4.1+sha512.f825273d0689cc9ead3259c14998037662f1dcd06912637b21a450e8da7cfeb4b1965bbee73d16927baa1201054126bc385c6f43ff4aa705c8631d26e12460f1"
+	}
 }

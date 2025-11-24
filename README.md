@@ -30,9 +30,9 @@ Easy RSS includes features such as:
 
 ## Building
 
-1. Make sure you have yarn installed
-2. Run `yarn install`
-3. Run `yarn dist`
+1. Make sure you have NPM installed
+2. Run `npm install`
+3. Run `npm run dist`
 4. Enjoy the compiled code in the `dist` folder and the extension .zip file in `web-ext-artifacts`!
 5. ...
 6. Profit!
